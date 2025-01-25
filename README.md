@@ -1,7 +1,7 @@
 # Curso_HTML_CSS_JavaScript
 Respositorio de aulas para o curso de HTML, CSS e JavaScript, Professor Pedro Capelari
 
-#Plano de Aula:
+##Plano de Aula:
 
   ## Aula 1: Introdução ao HTML e CSS
   - **Objetivos**: Compreender a estrutura básica do HTML e CSS.
