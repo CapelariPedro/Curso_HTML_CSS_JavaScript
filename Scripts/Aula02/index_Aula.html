@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula 02 - HTML avançado e CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Cabeçalho-->
+        <header>
+            <h1>HTML Avançado e Seletores em CSS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo principal -->
+         <main>
+            <!--Conteudo Secundário-->
+            <section>
+                <h2>Tags Semanticas</h2>
+                <p>HTML5 introduziu novas <strong>tags semanticas</strong> para estruturar melhor os sites.</p>
+            </section>
+
+            <section>
+                
+                <h2>Tabelas e Listas</h2>
+                <h3>Tabela de Usuários</h3>
+                <!--Está parte cria uma tabela-->
+                <table>
+                    <!--Está parte cria o cabeçalho da tabela-->
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Profissão</th>
+                        </tr>
+                    </thead>
+                    <!--Está parte cria o corpo da tabela-->
+                    <tbody>
+                        <!--Está tag é responsavel por adicionar informação as celulas da tabela-->
+                        <tr>
+                            <td>Pedro</td>
+                            <td>25</td>
+                            <td>Desenvolvedor</td>
+                        </tr>
+                        <tr>
+                            <td>Gustavo</td>
+                            <td>18</td>
+                            <td>Estudante</td>
+                        </tr>
+                        <tr>
+                            <td>João</td>
+                            <td>30</td>
+                            <td>Professor</td>
+                    </tbody>
+                </table>
+                <!--Está parte cria uma lista ordenada-->
+                <h3>Lista de Compras</h3>
+                <ol>
+                    <li>Arroz</li>
+                    <li>Feijão</li>
+                    <li>Carne</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Formatação de Texto</h2>
+                <p>Este texto contém um <b>negrito</b>, um <i>itálico</i> e um <mark>destaque</mark>.</p>
+                <p>Texto <del>riscado</del> e <ins>sublinhado</ins>.</p>
+            </section>
+
+            <section>
+                <h2>Formulário com seletores</h2>
+                <!--Está tag cria um formulário-->
+                <form>
+                    <!--Está tag cria um rotulo-->
+                    <label for="nome">Nome:</label>
+                    <!--Está tag cria um campo de texto-->
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                    <br><br><!--Está tag pula uma linha-->
+                    <!--Está tag cria um botão-->
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+         </main>
+         <footer>
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+         </footer>
+    </body>
+</html>
