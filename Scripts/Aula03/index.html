@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px auto 40px;
+            gap: 10px;
+        }
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        aside {
+            grid-area: sidebar;
+            background: #ccc;
+            padding: 15px;
+        }
+        main {
+            grid-area: content;
+            background: #f4f4f4;
+            padding: 15px;
+        }
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <main>Content</main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
