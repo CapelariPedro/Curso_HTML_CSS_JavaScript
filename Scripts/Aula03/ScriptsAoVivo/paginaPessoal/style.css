@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    align-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #feb47b;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+#sobre img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.8);
+}
+
+#sobre ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#formacao h2{
+    text-align: center;
+}
+
+#formacao .formacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#formacao ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    gap: 10px;
+    padding: 50px;
+}
+
+
+#contato h2{
+    text-align: center;
+}
+#contato form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+input, textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: #ff7e5f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+button:hover{
+    background-color: #feb47b;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+footer a:hover{
+    color: #feb47b;
+}
