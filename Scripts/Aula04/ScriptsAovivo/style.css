@@ -1,0 +1,31 @@
+input, textarea, select{
+    width: 10%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus{
+    border-color: blue;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #073709;
+}
+
+input:invalid{
+    border: 2px solid red;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required aria-label="nome"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com"required><br><br>
+
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" placeholder="(00)9999-0000" maxlength="10"><br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="password" required><br><br>
+
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto" placeholder="Insira um texto"></textarea><br><br>
+
+            <label for="numero">Numero</label>
+            <input type="number" id="numero" name="numero" disabled><br><br>
+
+            <label for="classe">Escolha seu tipo:</label>
+            <select name="classe" id="classe">
+                <option value="mago">Mago</option>
+                <option value="guerreiro">Guerreiro</option>
+                <option value="ladrao">Ladrão</option>
+            </select><br><br>
+
+            <label for="checkbox">Escolha sua arma:</label><br>
+            <input type="checkbox" name="arma" value="espada">Espada<br>
+            <input type="checkbox" name="arma" value="arco">Arco<br>
+            <input type="checkbox" name="arma" value="faca">Faca<br><br>
+
+            <label for="radio">Escolha sua armadura:</label><br>
+            <input type="radio" name="armadura" value="armadura">armadura<br>
+            <input type="radio" name="armadura" value="capa">capa<br>
+            <input type="radio" name="armadura" value="escudo">escudo<br><br>
+
+            <label for="file">Escolha um arquivo:</label><br>
+            <input type="file" id="file" name="file"><br><br>
+
+            <button type="submit">Enviar</button>
+        </form><br><br>
+
+        <h1>Formulários Com atributos de Validação</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" minlength="3"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@exmplo.com" required><br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="18" max="60"><br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </body>
+</html>
