@@ -1,0 +1,123 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+/* Fundo Neon */
+body {
+    background: linear-gradient(45deg, #020202, #0f0f0f);
+    color: #0ff;
+    text-align: center;
+}
+
+/* Texto Neon */
+.neon-text {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #00f;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f;
+}
+
+/* Seções */
+.container {
+    margin-top: 100px;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botões */
+button {
+    background: #0ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #0ff;
+}
+
+button:hover {
+    background: #f0f;
+    box-shadow: 0 0 20px #f0f;
+}
+
+/* Formulário */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}

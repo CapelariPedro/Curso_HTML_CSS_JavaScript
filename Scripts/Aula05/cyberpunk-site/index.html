@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk City</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1 class="neon-text">CYBERPUNK CITY</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre" aria-label="Sobre">Sobre</a></li>
+                <li><a href="#hackers" aria-label="Hackers">Hackers</a></li>
+                <li><a href="#contato" aria-label="Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção "Sobre" -->
+    <section id="sobre" class="container">
+        <h2>O Futuro Já Chegou</h2>
+        <p>Em um mundo dominado por corporações e inteligência artificial, apenas os mais habilidosos hackers sobrevivem...</p>
+        <button id="glitchButton">Ativar Glitch</button>
+    </section>
+
+    <!-- Seção "Hackers Famosos" -->
+    <section id="hackers" class="container">
+        <h2>Hackers Lendários</h2>
+        <ul id="hacker-list"></ul>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="container">
+        <h2>Junte-se à Resistência</h2>
+        <form id="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagemSucesso" class="hidden">Mensagem enviada com sucesso!</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2077 - Cyberpunk City</p>
+    </footer>
+
+</body>
+</html>
