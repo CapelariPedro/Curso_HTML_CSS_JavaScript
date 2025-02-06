@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo 2</title>
+    </head>
+    <body>
+        <ul id="lista">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <button id="adicionar">Adicionar Item</button><br><br>
+
+        <button id="remover">Remover Item</button>
+
+        <script>
+            let botaoA = document.getElementById("adicionar");
+
+            botaoA.addEventListener("click", function(){
+                let novoItem = document.createElement("li");
+                novoItem.innerText = "Novo Item";
+                document.getElementById("lista").appendChild(novoItem);
+            })
+
+            let botaoR = document.getElementById("remover");
+
+            botaoR.addEventListener("click", function(){
+                let novoItem = document.createElement("li");
+                novoItem.innerText = "Novo Item";
+                document.getElementById("lista").remove(novoItem);
+            });
+
+        </script>
+    </body>
+</html>

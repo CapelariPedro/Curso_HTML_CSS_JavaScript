@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM JS</title>
+    </head>
+    <body>
+        <h1 id="titulo">Titulo Original</h1>
+
+        <script>
+            let titulo = document.getElementById("titulo");
+            titulo.innerText = "Texto modificado por JavaScript";
+        </script>
+
+        <p class="paragrafo">Parágrafo 1</p>
+        <p class="paragrafo">Parágrafo 2</p>
+
+        <script>
+            let paragrafos = document.getElementsByClassName("paragrafo");
+            paragrafos[0].innerText = "Modificado!";
+            paragrafos[1].innerText = "Tambem Modificado";
+        </script>
+
+        <p>Paragrafo A</p>
+        <p>Paragrafo B</p>
+
+        <script>
+            let paragrafo = document.getElementsByTagName("p");
+            paragrafo[3].style.color = "red";
+        </script>
+
+        <p class="texto">Texto A</p>
+        <p class="texto">Texto B</p>
+
+        <script>
+            let texto = document.querySelectorAll(".texto");
+            texto.forEach(e => e.style.color = "blue");
+        </script>
+
+        <p id="demo">Texto original</p>
+
+        <script>
+            let p = document.getElementById("demo");
+            p.innerText = "Texto atualizado!";
+            p.innerHTML = "<strong>Texto atualizado!</strong>";
+
+            let novoParagrafo = document.createElement("p");
+            novoParagrafo.innerText = "Parágrafo adicionado via JS!";
+            document.body.appendChild(novoParagrafo);
+        </script>   
+
+        <div class="container">
+            <p class="item">Item a ser removido</p>
+        </div>
+
+        <script>
+            let pai = document.querySelector(".container");
+            let filho = document.querySelector(".item");
+            pai.removeChild(filho);
+        </script>
+
+        <button>Botão</button>
+
+        <script>
+            let button = document.querySelector("button");
+
+            button.addEventListener("click", function(){
+                alert("Foi apertado")
+            });
+        </script>
+
+
+        <button id="meuBotao">Clique aqui</button>
+        <script>
+             let botao = document.getElementById("meuBotao");
+             botao.addEventListener("click", function(){
+                botao.innerText = "Clicado!";
+             })
+        </script>
+        
+    </body>
+</html>
