@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>RPG de Texto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>🛡️ RPG de Texto - A Jornada do Herói ⚔️</h1>
+
+            <div id="escolhaClasse">
+                <h2>Escolha sua classe:</h2>
+                <button class="classe" data-classe="Guerreiro">🗡️ Guerreiro</button>
+                <button class="classe" data-classe="Mago">🔮 Mago</button>
+                <button class="classe" data-classe="Arqueiro">🏹 Arqueiro</button>
+            </div>
+
+            <div id="descricaoClasse"></div>
+
+            <button id="iniciarAventura" style="display: none;">Iniciar Aventura</button>
+
+            <div id="aventura" style="display: none;">
+                <p id="textoAventura">Você acorda em uma floresta escura...</p>
+                <button id="opcao1">Seguir pela Trilha</button>
+                <button id="opcao2">Explorar o rio</button>
+
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
