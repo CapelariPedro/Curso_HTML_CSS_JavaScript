@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Aula 7</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+        <p>Texto Teste</p>
+        <script>
+            $("p").css("color","red");
+        </script>
+
+        <h2 id="titulo">Titulo Original</h2>
+        <script>
+            $("#titulo").text("Titulo Modificado com jQuery");
+        </script>
+
+        <div class="box">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+        <script>
+            $(".box").hide();
+        </script>
+
+        <h4 id="tituloAppend">Ola Append</h4>
+
+        <script>
+            $("#tituloAppend").append("<p>Olá paragrafo</p>");
+        </script>
+
+
+        <p>---------------------------------------------------------</p>
+
+
+        <h3 id="tituloPrepend">Halo Prepend</h3>
+
+        <script>
+            $("#tituloPrepend").prepend("<p>Halo antes</p>");
+        </script>
+
+
+        <div class="box2">
+
+            <input type="text"></input><br><br>
+            <button id="botaoM">Mostrar</button>
+            <button id="botaoO">Ocultar</button>
+
+            <img id="imagem" src="logo_jQuery.jpg">
+
+        </div>
+
+        <script>
+
+            $("#imagem").hide();
+
+            $("#botaoM").click(function(){
+                $("#imagem").slideDown();
+            });
+
+            $("#botaoO").click(function(){
+                $("#imagem").slideUp();
+            });
+
+            $(".box2").mouseenter(function(){
+                $(this).css("background","yellow")
+            }).mouseleave(function(){
+                $(this).css("background","white");
+            });
+
+        </script>
+    </body>
+</html>
