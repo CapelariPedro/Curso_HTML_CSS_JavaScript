@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+input, button{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input{
+    width: 70%;
+}
+
+button{
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #777;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+th{
+    background-color: #444;
+}
+
+.edit, .delete{
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: #009688;
+    color: white;
+}
+
+.delete{
+    background-color: #e53935;
+    color:white;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content input{
+    width: 90%;
+}
+
+.modal-content button{
+    margin-top: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de Missões</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>⚔️ Sistema de Missões - RPG 🏹</h1>
+
+            <div id="escolhaClasse">
+                <h2>Escolha sua classe:</h2>
+                <button class="classe" data-classe="Guerreiro">🛡️ Guerreiro</button>
+                <button class="classe" data-classe="Mago">🔮 Mago</button>
+                <button class="classe" data-classe="Arqueiro">🏹 Arqueiro</button>
+            </div>
+
+            <div id="descricaoClasse"></div>
+
+            <button id="mostrarMissoes" style="display: none;">Ver Missões</button>
+
+            <div id="missoes" style="display: none;">
+                <h2>📜 Missões Disponíveis</h2>
+
+                <ul>
+                    <li>
+                        <strong>Missão 1:</strong> Derrotar 5 goblins.
+                        <button class="aceitarMissao">Aceitar Missão</button>
+                    </li>
+                    <li>
+                        <strong>Missão 2:</strong> Escontrar a Espada Lendária.
+                        <button class="aceitarMissao">Aceitar Missão</button>
+                    </li>
+                    <li>
+                        <strong>Missão 3:</strong> Escoltar o mercador pela floresta.
+                        <button class="aceitarMissao">Aceitar Missão</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="missoesAtivas" style="display: none;">
+                <h2>🛠️ Missões Aceitas</h2>
+
+                <ul id="listaMissoesAtivas">
+
+                </ul>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

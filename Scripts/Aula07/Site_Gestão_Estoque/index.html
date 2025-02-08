@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestão de Estoque - Indústria de Robôs</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="container">
+
+            <h1>🤖 Gestão de Estoque - Indústria de Robôs</h1>
+
+            <h2>Adicionar Novo Robô</h2>
+            <form id="formRobo">
+                <input type="text" id="modelo" placeholder="Modelo do Robô" required>
+                <input type="number" id="quantidade" placeholder="Quantidade" required>
+                <input type="text" id="fabricante" placeholder="Fabricante" required>
+                <button type="submit">Adicionar Robô</button>
+            </form>
+
+            <h2>📋 Estoque de Robôs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Quantidade</th>
+                        <th>Fabricante</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaRobos">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="modalEdicao" class="modal">
+            <div class="modal-content">
+                <h2>Editar Robô</h2>
+                <input type="text" id="editModelo" disabled>
+                <input type="number" id="editQuantidade">
+                <input type="text" id="editFabricante">
+                <button id="salvarEdicao">Salvar</button>
+                <button id="fecharModal">Cancelar</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
