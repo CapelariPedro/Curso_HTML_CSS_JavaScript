@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 08</title>
+    </head>
+    <body>
+        <style>
+            body{
+                font-size: 16px;
+            }
+            .container{
+                width:100%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .box{
+                width: 50%;
+                float: left;
+            }
+            @media(max-width: 768px){
+                body{
+                    font-size: 14px;
+                }
+                .box{
+                    width: 50%;
+                    background: #222;
+                    color: white;
+                }
+            }
+
+            @media(max-width: 480px){
+                body{
+                    font-size: 12px;
+                }
+            }
+
+        </style>
+        <div>
+            <div class="box">Caixa 01</div>
+            <div class="box">Caixa 02</div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">Coluna 1</div>
+              <div class="col-sm-12 col-md-6 col-lg-4">Coluna 2</div>
+              <div class="col-sm-12 col-md-6 col-lg-4">Coluna 3</div>
+            </div>
+          </div>
+          
+    </body>
+</html>

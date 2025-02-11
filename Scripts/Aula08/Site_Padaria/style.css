@@ -1,0 +1,29 @@
+bodY{
+    background-color: #f8f9fa;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header{
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary{
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #0056b3;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.table th, .table td{
+    vertical-align: middle;
+}

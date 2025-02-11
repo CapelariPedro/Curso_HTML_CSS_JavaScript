@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Chaves - Campeonato de Boxe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Chaves do Campeonato de Box</h1>
+        
+        <div class="card">
+
+            <div class="card-header">
+                <h5 class="card-title mb-0">Chaves</h5>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>Lutador 1</td>
+                            <td>Lutador 2</td>
+                            <td>Ações</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaChaves">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Cadastrar Novo Lutador</h5>
+            </div>
+            <div class="card-body">
+                <form id="formLutador">
+                    <div class="mb-3">
+                        <label for="nomeLutador" class="form-label">Nome do Lutador</label>
+                        <input type="text" class="form-control" id="nomeLutador" placeholder="nome" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
