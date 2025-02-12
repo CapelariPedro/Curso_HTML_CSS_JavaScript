@@ -51,7 +51,7 @@ mkdir supermercado-estoque
 cd supermercado-estoque
 mkdir backend
 cd backend
-npm init -y
+npm init
 npm install express mongoose cors body-parser dotenv
 ```
 
