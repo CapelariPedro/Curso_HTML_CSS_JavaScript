@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const produtosRoutes = require("./routes/produtos");
+const usuariosRoutes = require("./routes/auth");
 
 const api = express();
 api.use(cors());
@@ -14,6 +15,7 @@ mongoose.connect(process.env.MONGO_URI,{
 }).then(() => console.log("Conectado ao Banco de Dados MongoDB")).catch(err => console.log("Erro ao conectar:", err));
 
 api.use("/api/produtos", produtosRoutes);
+api.use("/api/usuarios", usuariosRoutes);
 
 const PORT = process.env.PORT || 5000;
 
