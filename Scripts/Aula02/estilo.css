@@ -1,0 +1,9 @@
+h2 {
+    color: white;
+    background-color: #000000;
+}
+
+p{
+    color: rgb(104,193,235);
+    background-color: hsl(234, 8%, 64%);
+}
