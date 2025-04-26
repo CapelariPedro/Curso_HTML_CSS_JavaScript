@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "menu content"
+                "footer footer";
+            border: 2px solid black;
+        }
+
+        header{
+            grid-area: header;
+            border: 1px solid blue;
+        }
+
+        aside{
+            grid-area: menu;
+            border: 1px solid green;
+        }
+
+        main{
+            grid-area: content;
+            border: 1px solid red;
+        }
+
+        footer{
+            grid-area: footer;
+            border: 1px solid purple;
+        }
+
+        .box{
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="box">HEADER</header>
+        <aside class="box">MENU</aside>
+        <main class="box">CONTENT</main>
+        <footer class="box">FOOTER</footer>
+    </div>
+</body>
+</html>

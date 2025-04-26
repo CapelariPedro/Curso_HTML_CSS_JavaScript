@@ -1,0 +1,44 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    margin: 10px;
+}
+
+.box{
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid purple;
+    background-color:  rgb(175, 18, 175);
+}
+
+#top-container{
+    border: 2px solid red;
+    background-color: orange;
+}
+
+#box1, #box2{
+    flex: 1;
+    text-align: center;
+}
+
+#middle-container{
+    justify-content: center;
+    border: 2px lightblue;
+    background-color: aqua;
+}
+
+#box3{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+#bottom-container{
+    flex: 2;
+}
