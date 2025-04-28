@@ -42,3 +42,27 @@
 #bottom-container{
     flex: 2;
 }
+
+#box5{
+    display: grid;
+    grid-template-areas: 
+        "box1 box2"
+        "box3 box4"
+    ;
+}
+
+#box6{
+    grid-area: box1;
+}
+
+#box7{
+    grid-area: box2;
+}
+
+#box8{
+    grid-area: box4;
+}
+
+#box9{
+    grid-area: box3;
+}
