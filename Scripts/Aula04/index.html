@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: blue;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <label for="nome"><b>Nome:</b></label>
+        <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+        <label for="cpf"><b>CPF: </b></label>
+        <input type="text" id="cpf" name="cpf" placeholder="123.456.789-99" required> 
+
+        <label for="dataNasc">Data de Nascimento: </label>
+        <input type="date" id="dataNasc" name="dataNasc">
+
+        <label for="idade">Idade: </label>
+        <input type="number" id="idade" name="idade" min="1" max="110">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+
+        <label for="tel"><b>Telefone: </b></label>
+        <input type="tel" id="tel" name="tel" placeholder="(00) 99999-9999" required maxlength="11">
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+
+    
+        <div class="container">
+            <form>
+                <label for="user">Usuário</label>
+                <input type="text" id="user" name="user" placeholder="Usuário" required>
+
+                <label for="password">Senha: </label>
+                <input type="password" id="password" name="password" required placeholder="Senha">
+
+                <button type="submit">Logar</button>
+            </form>
+        </div>
+
+        <div class="container-selection">
+            <h3>Select</h3>
+            <form>
+                <label for="sexo">Selecione o sexo biológico</label>
+                <select name="sexo" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </form>
+
+            <form>
+                <label for="listaCompras">Lista de Compras:</label>
+                <input type="checkbox" name="fruta" value="maça">Maça
+                <input type="checkbox" name="fruta">Banana
+
+
+                <label for="atividades">Atividades</label>
+                <input type="radio" name="atividade" value="Correr">Correr
+                <input type="radio" name="atividade" value="Estudar">Estudar
+            </form>
+        </div>
+</body>
+</html>

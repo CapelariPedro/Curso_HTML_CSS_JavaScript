@@ -49,7 +49,7 @@ router.post("/login", async (req, res)=>{
         res.status(201).json({message: "Login realizado com sucesso"});
 
     }catch(err){
-        console.err("Erro ao fazer login: ", err);
+        console.error("Erro ao fazer login: ", err);
         res.status(500).json({error: "Erro ao Logar || Erro interno do servidor"})
     }
 
